@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS-IP Geolocacion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+
+    <style>
+        #results{
+            background-color: rgba(73, 112, 112, 0.795);
+            color: white;
+            border: solid 1PX black;
+       
+        }
+    </style>
+ 
+    <header class="container cabezado">
+        <h2>Michale IP Geolocacion</h2>
+      </header>
+      
+      <main class="container">
+        <form id="formulario" >
+          Escriba una IP
+          <input required type="text"  id="buscarIP" placeholder="Ingrese un IP">
+      
+          <button type="submit" id="submit"> 
+            Buscar la IP
+          </button>
+        </form>
+         <small>INFORMACION DE LA IP</small>
+         <div>
+           <pre id="results"></pre>
+           </div>
+         
+      </main>
+
+
+
+     <script src="ip.js"></script>
+</body>
+</html>
+
+
