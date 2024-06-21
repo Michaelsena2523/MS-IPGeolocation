@@ -1,18 +1,11 @@
 // API CREDENCIALES
 
-const options = {
-    method: 'GET',
-    headers: {
-      'x-rapidapi-key': '7e7fd3eb14msheb47175d051340ap12fe28jsnb8272867982e',
-      'x-rapidapi-host': 'ipstack1.p.rapidapi.com'
-  
-    }
-  };
-  
+const apiKey = '43e7e29a-4722-408e-8c05-7dacde0f339f'; 
+
   // BUCLE DE BUSQUEDA
   const fecIP = ip => {
      
-     return fetch (`https://ipstack1.p.rapidapi.com/api.ipstack.com ${ip}`,options) 
+     return fetch ('https://apiip.net/api/check?ip='+ ip +'&accessKey='+ apiKey) 
      .then(res => res.json()); 
   }
   
